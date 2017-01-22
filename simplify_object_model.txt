@@ -1,0 +1,9 @@
+How to simplify object model
+============================
+
+* Task
+* Model
+* Simplyfied relations
+* Aggregates
+* Separated aggregates
+* TL;DR
