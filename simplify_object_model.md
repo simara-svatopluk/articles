@@ -14,7 +14,7 @@ Menu is more interesting. It's a hirearchical navigation structure that contain 
 
 Let's identify concepts, responsibilities and relations.
 
-![alt text](resource/simplify_object_model-1.png "Object model")
+![alt text](resource/simplify_object_model-1.png "First model")
 
 Page is a content holder, Menu and Item will together hold menu logic. LinkGenerator is an interface that will generate links for menu items, implementation will be acording our favorite framework.
 
@@ -32,7 +32,7 @@ Menu holds all it's Items, it has responsibility for logic above more Items and 
 
 Menu Items keep hierarchical structure. There are couple ways to model this, in this model we will assume that each Item can have a parent Item, and if not, it is a root Item. Should be this parent/child relation two way? Naturally yes. But it is difficult to implement, it a one way enough? Well, it can be. Fine, if one way is enough, we'll use it, we can find this not suitable, so maybe we'll change it later.
 
-{model 2}
+![alt text](resource/simplify_object_model-2.png "Model with simplified relations")
 
 ## Aggregates
 
@@ -44,7 +44,7 @@ Page is a content holder, so it is an aggregate and aggregate root itself.
 
 Can menu Item live without Menu? Nope, because logic is in both, in Menu and also in Item. Menu and Items are an aggregate. Menu is also natural entry point, aggregate root. This helps us encapsulate Item concept for Menu user, so Menu will be easier to understand. Encapsulation also strengthens asociation between Menu and Item, it can be now composition, because Item without menu doesn't make sense and Menu without Items is also non-sense.
 
-{model 3}
+![alt text](resource/simplify_object_model-3.png "Model with aggregates")
 
 ## Separated aggregates
 
@@ -52,7 +52,7 @@ Aggregates must be understant whole or not, must be created whole or not, must b
 
 Right now we have a problem between Page and Menu. We cannot work with Menu without related Pages. If we want to work with persisted Menu, we have to load also relevant Pages. This is bad. Let's separate them.
 
-{model 4}
+![alt text](resource/simplify_object_model-4.png "Model with separated aggregates")
 
 What is Item responsibility? One of them is to create link using LinkGenerator. What does it need for creating link? Only Page identification. Why does it know about whole Page? It doesn't have to. Great, we have just separated aggregates!
 
