@@ -14,7 +14,7 @@ Menu is more interesting. It's a hirearchical navigation structure that contain 
 
 Let's identify concepts, responsibilities and relations.
 
-{model 1}
+![alt text](resource/simplify_object_model-1.png "Object model")
 
 Page is a content holder, Menu and Item will together hold menu logic. LinkGenerator is an interface that will generate links for menu items, implementation will be acording our favorite framework.
 
