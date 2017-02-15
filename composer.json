@@ -3,6 +3,7 @@
   "description": "articles",
   "minimum-stability": "stable",
   "require": {
+	"php": "~7.0",
     "phpunit/phpunit": "~6.0",
     "ramsey/uuid": "^3.5"
   },
