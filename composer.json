@@ -1,0 +1,12 @@
+{
+  "name": "simara/articles",
+  "description": "articles",
+  "minimum-stability": "stable",
+  "require": {
+    "phpunit/phpunit": "~6.0",
+    "ramsey/uuid": "^3.5"
+  },
+  "autoload": {
+	"psr-4": {"ObjectModel\\": "simplify_object_model/code/src"}
+  }
+}
