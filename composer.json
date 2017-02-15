@@ -5,7 +5,8 @@
   "require": {
 	"php": "~7.0",
     "phpunit/phpunit": "~6.0",
-    "ramsey/uuid": "^3.5"
+    "ramsey/uuid": "^3.5",
+    "mockery/mockery": "^0.9.8"
   },
   "autoload": {
 	"psr-4": {"ObjectModel\\": "simplify_object_model/code/src"}
