@@ -4,18 +4,18 @@ namespace ObjectModel\Menu;
 
 use Mockery;
 use ObjectModel\LinkGenerator;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
 
 class ItemTest extends TestCase {
 
 	public function testShow() {
-		$pageId = '113352ab-65ee-4f58-b775-187e4e105771';
-		$item = new Item('About us', $pageId);
+		$item = new Item('A', 'About us', 'P');
 
 		$linkGenerator = Mockery::mock(LinkGenerator::class);
 		$linkGenerator->shouldReceive('pageLink')
 			->once()
-			->with('113352ab-65ee-4f58-b775-187e4e105771')
+			->with('P')
 			->andReturn('/page/about-us');
 
 		$expected = [
@@ -23,7 +23,7 @@ class ItemTest extends TestCase {
 			'link' => '/page/about-us',
 		];
 
-		$this->assertEquals($expected, $item->show($linkGenerator));
+		Assert::assertEquals($expected, $item->show($linkGenerator));
 	}
 
 }

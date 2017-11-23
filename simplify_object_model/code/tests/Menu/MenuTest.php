@@ -4,28 +4,107 @@ namespace ObjectModel\Menu;
 
 use Mockery;
 use ObjectModel\LinkGenerator;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\TestCase;
 
 class MenuTest extends TestCase {
 
 	public function testCreateEmptyMenu() {
 		$menu = new Menu();
-		$this->assertEquals([], $menu->show($this->createLinkGeneratorMock()));
+		Assert::assertEquals([], $menu->show($this->createLinkGeneratorMock()));
 	}
 
-	public function testAddItemToEmptyMenu() {
+	public function testAddRootItemToEmptyMenu() {
 		$menu = new Menu;
-		$menu->addItem('About us', '64d61a8d-67dd-45f1-9d69-f71541d55fbe');
+		$menu->addRootItem('A', 'About us', 'P');
 
 		$expected = [
-			[
+			'A' => [
 				'title' => 'About us',
-				'link' => '/page/64d61a8d-67dd-45f1-9d69-f71541d55fbe'
+				'link' => '/page/P',
+				'children' => [],
 			]
 		];
 
 		$linkGenerator = $this->createLinkGeneratorMock();
-		$this->assertEquals($expected, $menu->show($linkGenerator));
+		Assert::assertEquals($expected, $menu->show($linkGenerator));
+	}
+
+	public function testAddMoreRootItemToEmptyMenu() {
+		$menu = new Menu;
+		$menu->addRootItem('A', 'About us', 'P1');
+		$menu->addRootItem('B', 'About us', 'P2');
+
+		$expected = [
+			'A' => [
+				'title' => 'About us',
+				'link' => '/page/P1',
+				'children' => [],
+			],
+			'B' => [
+				'title' => 'About us',
+				'link' => '/page/P2',
+				'children' => [],
+			],
+		];
+
+		$linkGenerator = $this->createLinkGeneratorMock();
+		Assert::assertEquals($expected, $menu->show($linkGenerator));
+	}
+
+	public function testAddChildItem() {
+		$menu = new Menu;
+		$menu->addRootItem('A', 'About us', 'P1');
+		$menu->addChildItem('B', 'About us', 'P2', 'A');
+
+		$expected = [
+			'A' => [
+				'title' => 'About us',
+				'link' => '/page/P1',
+				'children' => [
+					'B' => [
+						'title' => 'About us',
+						'link' => '/page/P2',
+						'children' => [],
+					],
+				]
+			],
+		];
+
+		$linkGenerator = $this->createLinkGeneratorMock();
+		Assert::assertEquals($expected, $menu->show($linkGenerator));
+	}
+
+	public function testAddChildItemUnderNotExistingThrowsException() {
+		$menu = new Menu;
+		$menu->addRootItem('A', 'About us', 'P1');
+
+		$this->expectException(ParentItemNotExistException::class);
+		$menu->addChildItem('B', 'About us', 'P2', 'X');
+	}
+
+	public function moveUnknownThrowsException() {
+		
+	}
+
+	public function testMoveToNegativeThrowsException() {
+
+	}
+
+	public function testMoveToZeroPositionWhenOnlyOnePresent() {
+
+	}
+
+	public function testMoveToZeroPosition() {
+
+	}
+
+	public function testMoveToMiddlePosition() {
+
+	}
+
+	public function testMoveTooFar() {
+
 	}
 
 	private function createLinkGeneratorMock(): LinkGenerator {
