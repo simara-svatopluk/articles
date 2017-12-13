@@ -13,8 +13,11 @@
   * Value objects
 
 * Model implementation
-  * DDD and TDD are friends
-  * Actual code with tests
+  * Model from last article
+  * Implementing domain language
+  * DTO decision
+  * Unit tests + Aggregate unit test
+  * DDD and TDD are friends + link
 
 * Repositories
   * Idea
