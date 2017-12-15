@@ -1,10 +1,9 @@
 # Articles
 
 * [DDD Language](ddd_language/language.md)
+* [DDD Model](ddd_model/model.md)
 
 # Drafts
-
-* [DDD model](https://github.com/simara-svatopluk/articles/blob/ddd_model/ddd_model/model.md)
 
 # Ideas
 
