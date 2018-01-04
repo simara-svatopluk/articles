@@ -2,27 +2,13 @@
 
 * [DDD Language](ddd_language/language.md)
 * [DDD Model](ddd_model/model.md)
+* [DDD Simplify Object Model](ddd_simplify_model/simplify_model.md)
+* [DDD Implementation](ddd_implementation/implementation.md)
+* [DDD Repository](ddd_repository/repository.md)
 
 # Drafts
 
 # Ideas
-
-* DDD Simplify model
-  * Aggregates
-  * Entities
-  * Value objects
-
-* Model implementation
-  * Model from last article
-  * Implementing domain language
-  * DTO decision
-  * Unit tests + Aggregate unit test
-  * DDD and TDD are friends + link
-
-* Repositories
-  * Idea
-  * Memory implementation
-  * Infrastructure-free interface tests
 
 * Doctrine implementation
   * Separate mapping from domain
