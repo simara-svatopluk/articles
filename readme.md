@@ -5,13 +5,11 @@
 * [DDD Simplify Object Model](ddd_simplify_model/simplify_model.md)
 * [DDD Implementation](ddd_implementation/implementation.md)
 * [DDD Repository](ddd_repository/repository.md)
+* [DDD Doctrine Repository](ddd_doctrine_repository/doctrine.md)
 
 # Drafts
 
 # Ideas
-
-* Doctrine implementation
-  * Separate mapping from domain
 
 * ORM
   * WTF
