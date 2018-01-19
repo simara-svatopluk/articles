@@ -8,15 +8,8 @@
 * [DDD Doctrine Repository](ddd_doctrine_repository/doctrine.md)
 * [DDD Alternative Mapping](ddd_alternative_mapping/alternative_mapping.md)
 * [DDD Services and Factories](ddd_factories_services/factories_services.md)
+* [ORM - WTF?](orm-wtf/orm.md)
 
 # Drafts
 
 # Ideas
-
-* ORM
-  * WTF
-  * Object model - need?
-  * Relation model - need?
-  * Difference
-  * Mapping, problems
-  * https://martinfowler.com/bliki/OrmHate.html
