@@ -6,6 +6,7 @@
 * [DDD Implementation](ddd_implementation/implementation.md)
 * [DDD Repository](ddd_repository/repository.md)
 * [DDD Doctrine Repository](ddd_doctrine_repository/doctrine.md)
+* [DDD Alternative Mapping](ddd_alternative_mapping/alternative_mapping.md)
 
 # Drafts
 
