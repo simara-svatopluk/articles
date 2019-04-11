@@ -9,6 +9,7 @@
 * [DDD Alternative Mapping](ddd_alternative_mapping/alternative_mapping.md)
 * [DDD Services and Factories](ddd_factories_services/factories_services.md)
 * [ORM - WTF?](orm-wtf/orm.md)
+* [Single Responsibility Principle - Back to basics or over-engineering?](srp-overengeneering/srp.md)
 
 # Drafts
 
