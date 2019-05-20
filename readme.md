@@ -11,6 +11,10 @@
 * [ORM - WTF?](orm-wtf/orm.md)
 * [Single Responsibility Principle - Back to basics or over-engineering?](srp-overengeneering/srp.md)
 
+## Reviews
+
+* [Refactoring](review_refactoring/refactoring.md)
+
 # Drafts
 
 # Ideas
