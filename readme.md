@@ -10,6 +10,7 @@
 * [DDD Services and Factories](ddd_factories_services/factories_services.md)
 * [ORM - WTF?](orm-wtf/orm.md)
 * [Single Responsibility Principle - Back to basics or over-engineering?](srp-overengeneering/srp.md)
+* [Logic Belongs to Entities](entities-logic/entities_logic.md)
 
 ## Reviews
 
