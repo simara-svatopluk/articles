@@ -15,6 +15,7 @@
 ## Reviews
 
 * [Refactoring](review_refactoring/refactoring.md)
+* [Advanced Web Application Architecture](review_architecture/architecture.md)
 
 # Drafts
 
