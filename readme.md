@@ -11,6 +11,7 @@
 * [ORM - WTF?](orm-wtf/orm.md)
 * [Single Responsibility Principle - Back to basics or over-engineering?](srp-overengeneering/srp.md)
 * [Logic Belongs to Entities](entities-logic/entities_logic.md)
+* [Bugfixes for Free](bug-fixes-for-free/bug-fixes-for-free.md)
 
 ## Reviews
 
@@ -18,5 +19,7 @@
 * [Advanced Web Application Architecture](review_architecture/architecture.md)
 
 # Drafts
+
+* [Value over Goals and Rules](forest-work-takeaway-2/forest-work-takeaway-2.md)
 
 # Ideas
