@@ -72,25 +72,7 @@ In my experience, spending more time clarifying requirements makes delivery quic
 
 The three things come as a package. Unpaid fixes make the cost of defects visible. Authority over tools, architecture and requirements lets the team do something about that cost.
 
-```
-┌─────────────────────────┐ ┌──────────────────────┐ ┌─────────────────────────┐
-│ Bugs are fixed          │ │ Authority over tools,│ │ Authority to reject     │
-│ for free                │ │ architecture, team   │ │ vague requirements      │
-└────────────┬────────────┘ └──────────┬───────────┘ └────────────┬────────────┘
-             └─────────────────────────┼──────────────────────────┘
-                                       v
-              Team feels the cost of defects AND can act on it
-                                       |
-                                       v
-            Prevention: better tests, tools, clearer requirements
-                                       |
-                                       v
-                                  Fewer bugs
-                                       |
-                                       v
-              Team owns its results, methods and risk
-                    "a company inside a company"
-```
+![company inside a company](company-inside-a-company.png)
 
 A "company inside a company" means exactly that: the team owns its results, its methods and its risk.
 
