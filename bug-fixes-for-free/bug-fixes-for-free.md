@@ -4,66 +4,73 @@ Forest work takeaway #1
 
 ## Forest work
 
-I started to work as a forest worker recently, and I see bunch of parallels between SW engineering and forest work.
-I'm a genuine contractor in the forest - I have a work that has to be done, and it's up to me to do it.
-I'm paid for finished work - the money is agreed up front, and I don't get less or more.
+I recently started working as a forest worker, and I see a bunch of parallels between software engineering and forest work.
 
-When, how, with what tools - up to me. Up to me to wear proper protection. Up to me to get to the forest.
+I'm a genuine contractor in the forest. There is work that needs to be done, and it's up to me to do it. I'm paid for finished work: the money is agreed up front, and I get neither less nor more.
 
-But most importantly - up to me to fix my own mistakes.
+When, how, with what tools: up to me. Wearing proper protection: up to me. Getting to the forest: up to me.
 
-How it works?
+But most importantly, fixing my own mistakes is up to me.
 
-If I fall a tree in a wrong direction, and I have to work for 2 more hours to get it out - I do it for free.
-If I forget to plant a row of trees, I have to go back to the forest, and do it - for free.
-If I ride the tractor over arranged pile of branches, I have to put them back - guess what? For free.
+How does it work?
 
-I have to correct my mistakes for free.
+If I fell a tree in the wrong direction and spend two more hours getting it out, I do it for free.
+If I forget to plant a row of trees, I go back to the forest and plant it, for free.
+If I drive the tractor over a neatly arranged pile of branches, I put them back. Guess what? For free.
 
-## Software World
+I correct my mistakes for free.
+
+## What I mean by "free"
+
+I mean it literally: unpaid work.
+
+The work itself is paid as agreed. Bugs in it, found within an agreed period, are fixed on my own time. And only my own bugs.
+
+## Software world
 
 So why do we pay engineers to fix *their own* bugs?
 
-Where it leads to?
+I don't think engineers are less responsible by nature. I think it's the system. When the cost of a mistake lands somewhere else, and the engineer has no say in how the work is done, the rational response is to patch it and move on. Look at what follows:
 
-People are less responsible! Yeah, mistakes happen, I'll fix it.
-Instead of - I made a mistake, I'll improve so it doesn't happen again.
+**Responsibility.**
+"Yeah, mistakes happen, I'll fix it."
+Instead of: "I made a mistake. I'll improve so it doesn't happen again."
 
-People don't learn. I was told to work this way.
-Instead of - I made a mistake, I have to check different architecture, test strategies, ... so it doesn't happen again.
+**Learning.**
+"I was told to work this way."
+Instead of: "I made a mistake. I need to look at a different architecture or test strategy so it doesn't happen again."
 
-People don't push innovation. I don't have power to push this language, test strategy, architecture.
-Instead of - This approach is prone to errors, I'm changing it this way.
+**Innovation.**
+"I don't have the power to push a different language, test strategy or architecture."
+Instead of: "This approach is prone to errors, so I'm changing it."
 
-People don't search for the best tools. Nah, AI is just a language model, I'm the programmer.
-Instead of - This tool allows me to be faster? Let's give it a try.
+**Tools.**
+"Nah, AI is just a language model, I'm the programmer."
+Instead of: "Does this tool make me faster? Let's give it a try."
 
-Of course - people in the higher level of hierarchy do these activities.
-They care about improving processes because they feel the cost.
+People higher in the hierarchy already do these things, because they feel the cost and care about improving processes. Engineers at the end of the chain often don't feel the cost, and often can't act on it. So they do it the way they were told.
 
-But engineers in the end of the line often don't. Often even resist. Often do it the way they were told to.
+## Improving the software world
 
-## Improve the Software World
-
-To improve the SW world, we need to add some flavor, we cannot just tell engineers to do bugfixes for free.
+We can't just tell engineers to fix bugs for free. That would be punishment. It only works when two other things come with it.
 
 ### Authority to decide independently
 
-A team must have the authority to decide independently - as I do in the forest.
-I can only accept fixing bugs for free when I can decide my language, tools, architecture,
-and maybe even a team composition.
+A team must be able to decide independently, as I do in the forest. I can only accept fixing bugs for free when I decide the language, tools, architecture, and maybe even the team composition.
 
-### Requirements
+### Authority to reject vague requirements
 
-Software is more often then not described very vaguely.
+More often than not, software is described very vaguely.
 
-But when I know I'll fix bugs for free, I simply don't accept vague requirements.
-I'll work hard to have everything crystal clear.
+But when I know I'll fix bugs for free, I simply don't accept vague requirements. I work hard to get everything crystal clear. This goes hand in hand with the authority to decide: a team must be able to say no to vague requirements.
 
-This goes hand to hand with authority to decide.
-A team must have authority to not accept vague requirements.
+That also answers the question "what is a bug?" A bug is a deviation from what was agreed. If the client changes their mind, it's not a bug. It's a new agreement, and new paid work.
 
-### Let's do it
+In my experience, spending more time clarifying requirements makes delivery quicker, not slower.
+
+### How it fits together
+
+The three things come as a package. Unpaid fixes make the cost of defects visible. Authority over tools, architecture and requirements lets the team do something about that cost.
 
 ```
 ┌─────────────────────────┐ ┌──────────────────────┐ ┌─────────────────────────┐
@@ -85,14 +92,12 @@ A team must have authority to not accept vague requirements.
                     "a company inside a company"
 ```
 
-## Clarification
-
-I suggest that teams should fix *their own* bugs.
-Not bugs that happened upstream, and the team has to firefight consequences.
-
-Anyway, my experience is that if we spend more time clarifying requirements, it's quicker to deliver the software.
+A "company inside a company" means exactly that: the team owns its results, its methods and its risk.
 
 ## Open points
 
-* How to transfer projects between teams?
-* What is a bug?
+* The team might hide problems.
+    * How do we encourage a team to reveal a problem instead of hiding it?
+* How should projects be transferred between teams?
+* What is a bug, and what is not?
+    * Agreeing on that might take longer than fixing the bug itself.
