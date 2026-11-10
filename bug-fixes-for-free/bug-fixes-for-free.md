@@ -1,10 +1,13 @@
-# Bugfixes for free
+This is bullhit.
+What I wanted to express: I want to be free. Freelancer. Not bound by company structure/rules.
+Such freelancere fixes bugs for free.
 
-Forest work takeaway #1
+# Forest takeaway: fix bugs for free
+
+I was a software engineer for 16 years.
+Recently I started working as a forest worker, and I keep seeing parallels between the two jobs.
 
 ## Forest work
-
-I recently started working as a forest worker, and I see a bunch of parallels between software engineering and forest work.
 
 I'm a genuine contractor in the forest. There is work that needs to be done, and it's up to me to do it. I'm paid for finished work: the money is agreed up front, and I get neither less nor more.
 
@@ -14,9 +17,9 @@ But most importantly, fixing my own mistakes is up to me.
 
 How does it work?
 
-If I fell a tree in the wrong direction and spend two more hours getting it out, I do it for free.
-If I forget to plant a row of trees, I go back to the forest and plant it, for free.
-If I drive the tractor over a neatly arranged pile of branches, I put them back. Guess what? For free.
+* If I fell a tree in the wrong direction and spend two more hours getting it out, I do it for free.
+* If I plant trees too shallow so they don't thrive, I have to buy a new batch and replant them again. For free.
+* If I drive the tractor over a neatly arranged pile of branches, I put them back. Guess what? For free.
 
 I correct my mistakes for free.
 
