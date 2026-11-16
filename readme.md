@@ -11,6 +11,7 @@
 * [ORM - WTF?](orm-wtf/orm.md)
 * [Single Responsibility Principle - Back to basics or over-engineering?](srp-overengeneering/srp.md)
 * [Logic Belongs to Entities](entities-logic/entities_logic.md)
+* [DDD Promised to Tackle Complexity. Event Sourcing Delivered](ddd-with-es/ddd_with_es.md)
 
 ## Reviews
 
